@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,37 +8,106 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
-    background: #333;
+    background: #222;
     color: #fff;
-    padding: 1em 0;
+    padding: 1.5em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #66ccff;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #222;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    margin-top: 1em;
+    color: #222;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Link Buttons */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #0078d7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
+
+a.btn:hover {
+    background: #005bb5;
+}
+
+/* Object Styling (for CV embedding) */
+object {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling for Research/Projects */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #0078d7;
+    font-size: 1.8em;
+    border-bottom: 2px solid #0078d7;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
