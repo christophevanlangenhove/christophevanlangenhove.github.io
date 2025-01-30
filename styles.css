@@ -60,8 +60,8 @@ h1 {
 .intro img {
     display: block;
     margin: 0 auto;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #ddd;
@@ -128,3 +128,4 @@ section ul li {
     margin-bottom: 10px;
     line-height: 1.5;
 }
+
