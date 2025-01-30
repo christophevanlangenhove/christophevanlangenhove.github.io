@@ -10,11 +10,11 @@ body {
 
 /* Header Styles */
 header {
-    background: #f8f9fa;
+    background: #cce5ff;  /* Light blue */
     color: #000;
     padding: 1.5em 0;
     text-align: center;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #99c2ff;
 }
 
 nav ul {
