@@ -60,9 +60,8 @@ h1 {
 .intro img {
     display: block;
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 250px;  /* Increase the size */
+    height: auto;  /* Maintain aspect ratio */
     border: 3px solid #ddd;
 }
 
