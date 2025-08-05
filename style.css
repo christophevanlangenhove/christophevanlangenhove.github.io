@@ -43,6 +43,13 @@
   margin-top: 10px;
 }
 
+.profile-pic {
+  width: 300px;
+}
+.social-links img {
+  width: 50px;
+}
+
 .social-icons img {
   width: 32px;
   height: 32px;
