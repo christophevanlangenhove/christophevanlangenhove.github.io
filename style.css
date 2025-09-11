@@ -48,6 +48,10 @@ body {
   background-color: white;
 }
 
+.content ul li {
+  margin-bottom: 0.8em;   /* space between list items */
+}
+
 .profile-pic-large {
   width: 160px !important;
   border-radius: 8px;
