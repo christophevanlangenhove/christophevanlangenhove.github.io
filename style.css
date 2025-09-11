@@ -105,5 +105,8 @@ body {
 
 .content p {
   text-align: justify;
+  hyphens: auto;          /* better spacing on narrow screens */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
