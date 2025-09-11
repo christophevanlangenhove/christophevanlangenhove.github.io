@@ -103,3 +103,7 @@ body {
   height: 24px;
 }
 
+.content p {
+  text-align: justify;
+}
+
