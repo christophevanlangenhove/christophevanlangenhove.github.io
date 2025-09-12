@@ -110,6 +110,18 @@ body {
   -ms-hyphens: auto;
 }
 
+/* Add breathing room between sections like Summary, Contact, Research lists */
+.content section {
+  margin-bottom: 2.5rem;   /* space after each section */
+}
+
+/* Extra space before/after h2 headings */
+.content h2 {
+  margin-top: 2rem;        /* pushes heading down from previous block */
+  margin-bottom: 1rem;     /* space between heading and its text/list */
+}
+
+
 /* 1) Make sizing predictable and stop sneaky overflow */
 *,
 *::before,
