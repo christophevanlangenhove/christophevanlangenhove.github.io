@@ -110,3 +110,57 @@ body {
   -ms-hyphens: auto;
 }
 
+/* 1) Make sizing predictable and stop sneaky overflow */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { width: 100%; overflow-x: hidden; }
+
+/* 2) Base layout */
+.container { display: flex; gap: 24px; }
+.sidebar { width: 240px; flex-shrink: 0; }
+.content { flex: 1; min-width: 0; }   /* min-width:0 prevents flex overflow */
+
+/* 3) Images scale on small screens */
+img, .profile-pic-large { max-width: 100%; height: auto; }
+
+/* 4) Tidy the hero row on desktop */
+.top-section { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.photo-right { margin-left: 40px; }
+
+/* 5) Typography that scales */
+h1.name { font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem); }
+.affiliation { font-size: clamp(1rem, 1.2vw + 0.6rem, 1.2rem); }
+
+/* 6) Lists spacing in main content (applies to Research/CV too) */
+.content ul li { margin-bottom: 0.8em; }
+
+/* ---------- Mobile tweaks ---------- */
+@media (max-width: 768px) {
+  /* Stack sidebar above content */
+  .container { flex-direction: column; gap: 16px; }
+  .sidebar { width: 100%; }
+  .content { width: 100%; padding: 0 12px; }
+
+  /* Stack name + photo vertically */
+  .top-section { flex-direction: column; align-items: flex-start; }
+  .photo-right { margin-left: 0; margin-top: 12px; }
+  .profile-pic-large { width: 140px; border-radius: 8px; }
+
+  /* Make menu and social icons wrap nicely */
+  .sidebar nav ul { padding-left: 0; }
+  .sidebar nav li a { display: inline-block; padding: 8px 0; }
+  .social-icons { flex-wrap: wrap; row-gap: 8px; column-gap: 12px; }
+
+  /* Comfortable line-length on phones */
+  .content { max-width: 70ch; }
+}
+
+/* Tiny phones */
+@media (max-width: 420px) {
+  .profile-pic-large { width: 120px; }
+  .sidebar h2, .content h2 { font-size: 1.1rem; }
+}
+
+
+
